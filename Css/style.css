@@ -1,0 +1,278 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header {
+  max-width: 100%;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+}
+
+.header__search-icon {
+  width: 20px;
+  position: absolute;
+  top: 38.8%;
+  right: 20%;
+}
+
+.header__search {
+  position: relative;
+  background-color: #fce065;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+}
+
+.header__search input {
+  position: relative;
+  font-size: 18px;
+  background: transparent;
+  padding: 10px 5px;
+  border-bottom: 1px solid white;
+  border: none;
+  max-width: 100%;
+  color: white;
+}
+
+.header__search input::before {
+  content: "";
+  width: 20px;
+  height: 1px;
+  background-color: #fff;
+  display: inline-block;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.header__search img {
+  max-width: 100%;
+}
+
+.header__logo {
+  padding: 10px 0px;
+  width: 80%;
+  text-align: center;
+}
+
+.content {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__navigation {
+  font-size: 20px;
+  padding-top: 60px;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2b2a2a;
+  color: #dfdfdf;
+  letter-spacing: 1.1px;
+}
+
+.content__navigation li {
+  padding-bottom: 10px;
+}
+
+.content__main {
+  width: 60%;
+}
+
+.content__poster {
+  position: relative;
+  max-width: 100%;
+  height: 300px;
+}
+
+.content__poster img {
+  width: 100%;
+  height: 100%;
+}
+
+.content__poster-info {
+  width: 350px;
+  position: absolute;
+  top: 90px;
+  left: 50px;
+}
+
+.content__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__watched-films {
+  padding: 10px 110px 0px 30px;
+}
+
+.content__title {
+  margin-bottom: 20px;
+}
+
+.content__film-list {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.content__film-list a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-text-decoration: underline #e6e61e 2px;
+          text-decoration: underline #e6e61e 2px;
+  color: gray;
+}
+
+.content__film-list ul {
+  position: relative;
+}
+
+.content__film-list li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #b91d1d;
+  position: absolute;
+  margin-top: 10px;
+  left: 0px;
+}
+
+.content__film-list li {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.content__add-film {
+  padding-top: 10px;
+}
+
+.content__film-form {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.content__film-form input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+.content__film-form input[type="text"] {
+  background-color: #e7e7e7;
+  border: none;
+  width: 200px;
+  padding: 8px;
+  border-radius: 4px;
+  color: gray;
+}
+
+.content__advertising {
+  width: 20%;
+  background-color: #2b2a2a;
+  color: #cccc10;
+  text-align: center;
+  font-size: 14px;
+}
+
+.content__adv-img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.content__adv-img img {
+  width: 100%;
+}
+
+.little-text {
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
+.film-name {
+  font-size: 32px;
+  letter-spacing: 1.5px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.trash {
+  width: 30px;
+  height: 20px;
+  background-color: yellow;
+}
+
+.trash:hover {
+  background-color: red;
+}
+/*# sourceMappingURL=style.css.map */

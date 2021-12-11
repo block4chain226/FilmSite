@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <div class="header__container">
+            <div class="header__search">
+              <div class="header__search-icon">
+                <img src="/Img/header/search.png" alt="" />
+              </div>
+              <input type="text" value="Поиск" id="search" />
+            </div>
+            <div class="header__logo">
+              <h2>Logotype</h2>
+            </div>
+          </div>
+        </header>
+        <section class="content">
+          <nav class="content__navigation">
+            <ul>
+              <li>Фильмы</li>
+              <li>Сериалы</li>
+              <li>Мультфильмы</li>
+              <li>Клипы</li>
+              <li>Трейлеры</li>
+            </ul>
+          </nav>
+          <div class="content__main">
+            <div class="content__poster">
+              <img src="/Img/main/mars.jpeg" alt="" />
+              <div class="content__poster-info">
+                <div id="genre" class="little-text">Комедия</div>
+                <div class="film-name">Марсианин</div>
+                <div class="little-text">
+                  история человека, выжившего на чужой планете в одиночку
+                </div>
+                <div class="little-text">Имдб 8.0 Кинопоиск 7</div>
+              </div>
+            </div>
+            <div class="content__info">
+              <div class="content__watched-films">
+                <div class="content__title"><h2>Просмотренные фильмы</h2></div>
+                <div class="content__film-list">
+                  <ul id="watched-films">
+                    <a href=""><li>Чужой</li></a>
+                    <a href=""><li>Чужой</li></a>
+                    <a href=""><li>Чужой</li></a>
+                    <a href=""><li>Чужой</li></a>
+                    <a href=""><li>Чужой</li></a>
+                  </ul>
+                </div>
+              </div>
+              <div class="content__add-film">
+                <div class="content__title"><h2>добавить новый фильм</h2></div>
+                <div class="content__film-form">
+                  <form action="#">
+                    <legend>Введите название фильма</legend>
+
+                    <input type="text" id="enter-film" />
+
+                    <legend>Сделать его любимым?</legend>
+
+                    <label for="fav-film"
+                      ><input type="checkbox" id="fav-film" />Да!</label
+                    >
+                    <div>
+                      <input type="submit" id="submit" value="Подтвердить" />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content__advertising">
+            <h3>Реклама от спонсоров</h3>
+            <div class="content__adv-img">
+              <a href=""><img src="/Img/adversting/house.jpeg" alt="" /></a>
+            </div>
+            <div class="content__adv-img">
+              <a href=""><img src="/Img/adversting/house.jpeg" alt="" /></a>
+            </div>
+            <div class="content__adv-img">
+              <a href=""><img src="/Img/adversting/house.jpeg" alt="" /></a>
+            </div>
+          </div>
+        </section>
+        <footer class="footer"></footer>
+      </div>
+    </div>
+    <script src="Js/script.js"></script>
+  </body>
+</html>
